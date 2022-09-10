@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex gap-28  md:justify-around my-9 ">
+        <div class="hidden md:flex items-center " >
+            <img src="../assest/logo/Vector.svg" alt="">
+            <b>Pizza Shid</b>
+        </div>
+        <nav class="flex-row items-center">
+            <ul class="hidden md:flex flex-row items-center">
+                <li class="px-4"><a href="home.html" >Home</a></li>
+                <li class="px-4"><a href="Menu.html" class="primary-color">Menu</a></li>
+                <li class="px-4"><a href="#">Delivery</a></li>
+                <li class="px-4"><a href="#">About</a></li>
+                <li class="px-4"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+           
+        <!-- hamburger menu -->
+              <button class=" flex flex-col   md:hidden  hamburger--menu  ">
+                <span class=" w-8 h-1 mt-2 rounded inline-block bg-primary-color " > </span>
+                <span class=" w-8 h-1 mt-2 rounded inline-block  bg-primary-color ">  </span>
+                <span class=" w-8 h-1 mt-2 rounded inline-block bg-primary-color ">  </span>
+
+                <nav class=" hidden flex-col items-center menu ">
+                    <ul>
+                        <span class="menu-close"></span>
+                        <li><a href="home.html" class="primary-color">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                  </nav>
+              </button>
+    
+        <div class=" flex flex-row items-center">
+            <img class="ml-6" src="../assest/icon/Search.svg" alt="Search">
+            <img class="ml-6" src="../assest/icon/noun_cart_1206183.svg" alt="shopping cart">
+            <button class="popup-btn ml-6 py-2.5 px-7 text-white bg-primary-color rounded-3xl ">SIGN IN</button>
+            <!-- popup -->
+            <div class=" popup bg-white border-color rounded-lg fixed">
+                <h4 class="text-center p-4 ">
+                   <span class="tect-color">Don't have an account?<a class="active:primary-color primary-color" href="signup.html">sign up</a></span>
+                    <span class="popup-close"></span>
+                </h4>
+
+                    <form class="form flex flex-col mx-4" action="#">
+                        
+                            <label class="text-color text-sm" for="Username">Username</label>
+                            <input type="text" class="select-border-color rounded-sm text-color w-full py-1 px-2 text-sm" id="Username" placeholder="Username" >
+                         
+                            <label class="text-color text-sm mt-3" for="Password">Password</label>
+                            <input type="password" class="select-border-color rounded-sm text-color w-full py-1 px-2 text-sm" id="Password" placeholder="Password" >
+                          
+                           <button class="bg-primary-color my-6 mx-20  w-30 h-8 text-white rounded-3xl  ">sign in</button>
+                    </form> 
+        </div>
+    </header>
+<h2 class=" text-color text-center my-16 font-semibold text-4xl ">Pizza</h2>
+<section class="flex flex-col mx-28 md:flex-row md:justify-around md:mx-56 mb-20 gap-y-5">
+  <div class=" w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden ">
+      <div>
+          <img class="rounded-image" src="../assest/image/image 1.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Cheese Lovers</h3>
+      <p class="text-sm  font-light text-center mt-1 w-60 ">Combination of Alfredo sauce and two cheeses – Romano, and Parmesan.</p>
+      <span class="my-5 text-2xl font-semibold">$20.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+  <div class="w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden">
+      <div>
+          <img class="rounded-image" src="../assest/image/image 2.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Pepperoni Pizza</h3>
+      <p class="text-sm font-light text-center  mt-1 w-60">Pizza with homemade spicy beef sausage</p>
+      <span class="my-5 text-2xl font-semibold">$25.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+  <div class=" w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden  ">
+      <div class="rounded-image">
+          <img   src="../assest/image/image 3.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Margherita Pizza</h3>
+      <p class="text-sm font-light text-center  mt-1 w-60" >Made with San Marzano tomatoes, mozzarella cheese, and fresh basil.</p>
+      <span class="my-5 text-2xl font-semibold">$35.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+</section>
+<h2 class=" text-color text-center my-16 font-semibold text-4xl ">Hamburger</h2>
+<section class="flex flex-col mx-28 md:flex-row md:justify-around md:mx-56 mb-20 gap-y-5">
+  <div class=" w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden ">
+      <div>
+          <img class="rounded-image" src="../assest/image/image 1.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Cheese Lovers</h3>
+      <p class="text-sm  font-light text-center mt-1 w-60 ">Combination of Alfredo sauce and two cheeses – Romano, and Parmesan.</p>
+      <span class="my-5 text-2xl font-semibold">$20.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+  <div class="w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden">
+      <div>
+          <img class="rounded-image" src="../assest/image/image 2.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Pepperoni Pizza</h3>
+      <p class="text-sm font-light text-center  mt-1 w-60">Pizza with homemade spicy beef sausage</p>
+      <span class="my-5 text-2xl font-semibold">$25.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+  <div class=" w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden  ">
+      <div class="rounded-image">
+          <img   src="../assest/image/image 3.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Margherita Pizza</h3>
+      <p class="text-sm font-light text-center  mt-1 w-60" >Made with San Marzano tomatoes, mozzarella cheese, and fresh basil.</p>
+      <span class="my-5 text-2xl font-semibold">$35.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+</section>
+<h2 class=" text-color text-center my-16 font-semibold text-4xl ">Drinks</h2>
+<section class="flex flex-col mx-28 md:flex-row md:justify-around md:mx-56 mb-20 gap-y-5">
+  <div class=" w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden ">
+      <div>
+          <img class="rounded-image" src="../assest/image/image 1.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Cheese Lovers</h3>
+      <p class="text-sm  font-light text-center mt-1 w-60 ">Combination of Alfredo sauce and two cheeses – Romano, and Parmesan.</p>
+      <span class="my-5 text-2xl font-semibold">$20.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+  <div class="w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden">
+      <div>
+          <img class="rounded-image" src="../assest/image/image 2.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Pepperoni Pizza</h3>
+      <p class="text-sm font-light text-center  mt-1 w-60">Pizza with homemade spicy beef sausage</p>
+      <span class="my-5 text-2xl font-semibold">$25.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+  <div class=" w-72 flex flex-col items-center rounded-3xl border-color overflow-hidden  ">
+      <div class="rounded-image">
+          <img   src="../assest/image/image 3.png" alt="">
+      </div>
+      <h3 class="text-2xl font-semibold">Margherita Pizza</h3>
+      <p class="text-sm font-light text-center  mt-1 w-60" >Made with San Marzano tomatoes, mozzarella cheese, and fresh basil.</p>
+      <span class="my-5 text-2xl font-semibold">$35.00</span>
+      <select class="w-60 rounded-3xl select-border-color text-color text-base  font-normal py-2 px-4" name="" id="">
+          <option value="">Regular</option>
+          <option value="">Regular</option>
+      </select>
+      <button class="bg-primary-color w-60 h-10 text-white rounded-3xl mt-3 mb-6 ">Add to cart</button>
+  </div>
+</section>
+    <script src="home.js"></script>
+
+</body>
+</html>

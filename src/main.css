@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-color{
+    color: #F44A25;
+}
+.bg-primary-color{
+    background-color:#F44A25;
+}
+
+
+.text-color{
+    color: #333333;
+}
+.border-color{
+    border: 1px solid #BDBDBD;
+}
+.select-border-color{
+    border: 1px solid #4F4F4F
+}
+.rounded-image{
+    overflow: hidden;
+    border-radius: 0px 0 300px 0px;
+    
+}
+.dimensions--image {
+    max-width: 549px;
+    max-height: 765px;
+   
+}
+/* hamburger menu */
+.show-menu{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #f44a250f; */
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    float: left;
+
+}
+.show-menu>ul>li{
+    padding: 10px 48px;
+}
+.menu-close:after{
+    content:"\00D7";
+    float: right;
+    cursor: pointer;
+    color: #F44A25;
+    margin-left: 10px;
+}
+/* popup */
+.popup-wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0);
+    z-index:-1;
+    transition: background-color 0.5s;
+}
+.popup-wrapper.show{
+    background-color:rgba(0,0,0,0.5);
+    z-index:0;
+}
+.popup{
+    left:50%;
+    top:100px;
+    transform:translateX(-50%);
+    opacity:0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    min-width: 400px;
+}
+.popup.show{
+    opacity:1;
+    visibility:visible;
+}
+.popup>h4>span.popup-close:after{
+    content:"\00D7";
+    float: right;
+    cursor: pointer;
+}
+.popup>button.popup-close{
+    float: right;
+    margin:15px 20px;
+
+}
+
+/* .s {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+
+
+
+/*  *********************sign up page **********************   */
+.sign--up{
+    margin:auto;
+    width: 20%;
+    box-shadow: 0 2px 5px #f44a2573;
+}
+.sign--up>span{
+    display: inline-block;
+    font-weight: 400;
+    font-size:1.5rem ;
+    color: #333333;
+    margin: 20px 0 20px 100px;
+
+}
+.logo{
+    margin: 50px 46%;
+}
+/* ////////////////////*****************/
+.is-valid{
+    border-color: #59e959;
+    box-shadow:0px 0px 5px #59e959;
+}
+.is-invalid{
+   border-color: #f13535;
+   box-shadow: 0px 0px 5px #f13535;
+}
